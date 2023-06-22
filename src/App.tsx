@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDisclosure } from "@chakra-ui/react";
 import {
   useAccount,
@@ -11,7 +11,6 @@ import {
 import SelectWalletModal from "./SelectWalletModal";
 import metadata from "./metadata/data.json";
 import contractData from "./PolygonNFT.json";
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
@@ -101,7 +100,7 @@ function App() {
           <div className="card">
             <div className="card-content">
               <p>
-                <img src={logo} className="logo" alt="logo" />
+                <img src="./logo.svg" className="logo" alt="logo" />
               </p>
               <h2 className="card-title">Welcome to PolyWarrior</h2>
               <p className="card-body">
